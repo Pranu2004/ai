@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+/* Gradient Background */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4f46e5, #9333ea, #06b6d4);
+    z-index: -1;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Glass Effect Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* Inputs */
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    outline: none;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+select {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+button {
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4f46e5;
+    background: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Output */
+.output h2, .output h3 {
+    margin-bottom: 10px;
+}
+
+#summaryResult {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Keywords */
+#keywords span {
+    display: inline-block;
+    background: rgba(255,255,255,0.25);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    margin-top: 50px;
+}
+
+footer a {
+    color: #bae6fd;
+    text-decoration: none;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}

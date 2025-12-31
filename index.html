@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Research Paper Summarizer</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+    <header>
+        <h1>AI Research Paper Summarizer</h1>
+        <p>AI-powered summaries • Keywords • Citations</p>
+    </header>
+
+    <div class="glass-card">
+        <label>📑 Upload Research Paper (PDF)</label>
+        <input type="file" id="fileInput" accept=".pdf">
+    </div>
+
+    <div class="glass-card">
+        <label>✍️ Paste Research Paper Text</label>
+        <textarea id="paperText" placeholder="Paste your research paper content here..."></textarea>
+    </div>
+
+    <div class="controls">
+        <select id="summaryType">
+            <option value="short">Short Summary</option>
+            <option value="detailed">Detailed Summary</option>
+            <option value="keypoints">Key Points</option>
+        </select>
+
+        <button onclick="generateSummary()">Generate AI Summary</button>
+    </div>
+
+    <div id="loading" class="loading hidden">
+        🤖 AI is analyzing your paper...
+    </div>
+
+    <div class="glass-card output hidden">
+        <h2>🧠 AI Summary</h2>
+        <p id="summaryResult"></p>
+
+        <h3>🔑 Keywords</h3>
+        <div id="keywords"></div>
+
+        <h3>📚 Citations</h3>
+        <ul id="citations"></ul>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 AI Research Summarizer | All Rights Reserved</p>
+    <p>📧 Contact: <a href="mailto:bojjapranaya@gmail.com">bojjapranaya@gmail.com</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
